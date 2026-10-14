@@ -1,0 +1,67 @@
+{
+  "_README": "Ye file config hai. 'contact' section se aapka contact block apne aap banega.",
+
+  "owner": "Abhijeet-Kumar-Prajapati",
+  "profile_repo": "Abhijeet-Kumar-Prajapati",
+  "branch": "main",
+  "readme_path": "README.md",
+
+  "max_projects": 8,
+  "exclude_repos": [],
+
+  "auto_projects": true,
+  "auto_skills": true,
+  "auto_topics": true,
+  "auto_bio": true,
+  "auto_contact": true,
+
+  "_skills_note": "Ye skills badges PEHLE dikhti hain. Naya kuch seekhein to yahan add kar dein. Sirf wahi likhein jo aap SACHCHI jaante hain - recruiter pehla yahi check karta hai.",
+  "skills": ["HTML", "CSS", "JavaScript"],
+
+  "_learning_note": "Jo abhi seekh rahe ho. Ye profile par alag dikhega, isse recruiter ko lagta hai ki aap actively seekh rahe ho.",
+  "learning": ["Git & GitHub", "Responsive Design", "DOM Manipulation"],
+
+  "commit_message": "chore(profile): auto-update by profile_manager",
+
+  "profile": {
+    "name": "Abhijeet Kumar Prajapati",
+    "location": "India",
+    "bio": "BTech IT student - HTML, CSS & JavaScript. Building responsive, clean and user-friendly web projects. Open to internships and entry-level roles.",
+    "hireable": true
+  },
+
+  "contact": {
+    "email": "abhijeet943935@gmail.com",
+
+    "show_email": true,
+    "_show_email_note": "true = email dikhega. Chhupani ho to false kar dein.",
+
+    "show_phone": false,
+    "phone_e164": "",
+    "_phone_note": "Default: false (chhupa hua). Public phone number se scam/telemarketing calls aati hain - isliye profile par nahi dikhaya. Phone sirf resume/CV me dijiye, jo aap company ko directly bhejte hain.",
+
+    "show_linkedin": false,
+    "linkedin_url": "https://www.linkedin.com/in/YOUR-HANDLE",
+    "_linkedin_note": "Asli LinkedIn URL daalne ke baad ise true kar dein. Abhi placeholder hai isliye band hai - warna toot-ti link public ho jayegi.",
+
+    "show_discussions": true,
+    "discussions_url": "https://github.com/Abhijeet-Kumar-Prajapati/Abhijeet-Kumar-Prajapati/discussions",
+
+    "show_portfolio": false,
+    "portfolio_url": "https://your-portfolio.example.com",
+
+    "allow_messages": true,
+    "_messages_note": "true = 'message' button bana dega jo mailto: se aapke inbox me message bhejta hai. Isme koi form/server nahi hai, isliye ye safe hai.",
+
+    "response_time": "",
+    "_response_note": "Khali chhodo ya apni SACHCHI time likhein. Jhootha time likha to recruiter expect karega aur aapki impression kharab hogi."
+  },
+
+  "topic_rules": {
+    "HTML": ["html", "frontend", "web"],
+    "CSS": ["css", "frontend", "responsive-design"],
+    "JavaScript": ["javascript", "frontend", "web"],
+    "Python": ["python", "automation", "scripting"],
+    "TypeScript": ["typescript", "frontend"]
+  }
+}
