@@ -44,11 +44,12 @@ projects, learn from experienced developers, and contribute to production code.
 <img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML" title="HTML" />
 <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS" title="CSS" />
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" title="JavaScript" />
+<img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" title="Java" />
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" title="Python" /><br><br>
 
 **Currently learning:** `Git & GitHub` `Responsive Design` `DOM Manipulation`<br><br>
 
-**Also working with:** `automation` `scripting`
+**Also working with:** `gear` `automation` `scripting` `programming` `dsa` `oop`
 <!-- AUTO:SKILLS:END -->
 
 > Naya repo banate hi ye badges apne aap update ho jayenge.
@@ -74,7 +75,9 @@ projects, learn from experienced developers, and contribute to production code.
 <!-- AUTO:PROJECTS:START -->
 | Project | Description | Tech | Stars |
 | :--- | :--- | :---: | ---: |
-| **[Web-Media-Player](https://github.com/Abhijeet-Kumar-Prajapati/Web-Media-Player)** | A responsive HTML, CSS and JavaScript web media player for playing local audio and video files with playlist controls, playback speed, volume adjustment, and a modern user interface. | `HTML` | ⭐ 0 |
+| **[Ionic-ToolKit-](https://github.com/Abhijeet-Kumar-Prajapati/Ionic-ToolKit-)** | A feature-rich web toolkit containing interactive modules like calculators, DSA problem solvers, a digital library, matrix operations, and mini-games built with modern web technologies. | `HTML` | ⭐ 0 |
+| **[MULTIPLE-JAVA-PRACTICE-PROGRAMS---ALL-IN-ONE-LAUNCHER](https://github.com/Abhijeet-Kumar-Prajapati/MULTIPLE-JAVA-PRACTICE-PROGRAMS---ALL-IN-ONE-LAUNCHER)** | A collection of multiple Java practice programs in one launcher, covering essential programming concepts, logical problem-solving, and hands-on coding practice. Ideal for beginners and students to learn, practice, and improve Java programming skills. | `Java` | ⭐ 0 |
+| **[Web-Media-Player](https://github.com/Abhijeet-Kumar-Prajapati/Web-Media-Player)** | A responsive HTML, CSS and JavaScript web media player for playing local audio and video files with playlist controls, playback speed, volume adjustment, and a modern user interface. <br/>[Live Demo](https://abhijeet-kumar-prajapati.github.io/Web-Media-Player/) | `HTML` | ⭐ 0 |
 <!-- AUTO:PROJECTS:END -->
 
 ---
