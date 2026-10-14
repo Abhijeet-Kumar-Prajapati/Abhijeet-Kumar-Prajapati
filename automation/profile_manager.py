@@ -93,6 +93,16 @@ LANG_BADGES = {
     "React": ("61DAFB", "react", "black"),
     "Vue.js": ("4FC08D", "vuedotjs", "black"),
     "Node.js": ("339933", "nodedotjs", "white"),
+    "MySQL": ("4479A1", "mysql", "white"),
+    "SQL": ("025E8C", "database", "white"),
+    "Git": ("F05032", "git", "white"),
+    "GitHub": ("181717", "github", "white"),
+    "VS Code": ("007ACC", "visualstudiocode", "white"),
+    "PostgreSQL": ("4169E1", "postgresql", "white"),
+    "MongoDB": ("47A248", "mongodb", "white"),
+    "Linux": ("FCC624", "linux", "black"),
+    "Figma": ("F24E1E", "figma", "white"),
+    "Docker": ("2496ED", "docker", "white"),
 }
 
 # ---------------------------------------------------------------------------
@@ -281,22 +291,39 @@ def render_skills(repos, cfg):
                 extra.append(t)
 
     parts = []
-    if ordered:
-        badges = []
-        for name in ordered:
-            color, logo, txt = LANG_BADGES.get(name, ("5B4B8A", "", "white"))
-            label = quote(name, safe="")  # "C++" jaise names URL-safe ban jate hain
-            if logo:
-                badges.append(
-                    f'<img src="https://img.shields.io/badge/{label}-{color}?style=for-the-badge'
-                    f'&logo={logo}&logoColor={txt}" alt="{name}" title="{name}" />'
-                )
-            else:
-                badges.append(
-                    f'<img src="https://img.shields.io/badge/{label}-{color}?style=for-the-badge"'
-                    f' alt="{name}" title="{name}" />'
-                )
-        parts.append("\n".join(badges))
+    groups = cfg.get("skill_groups") or {}
+
+    def _badge(name):
+        color, logo, txt = LANG_BADGES.get(name, ("5B4B8A", "", "white"))
+        label = quote(name, safe="")  # "C++" jaise names URL-safe ban jate hain
+        if logo:
+            return (
+                f'<img src="https://img.shields.io/badge/{label}-{color}?style=for-the-badge'
+                f'&logo={logo}&logoColor={txt}" alt="{name}" title="{name}" />'
+            )
+        return (
+            f'<img src="https://img.shields.io/badge/{label}-{color}?style=for-the-badge"'
+            f' alt="{name}" title="{name}" />'
+        )
+
+    if groups:
+        # Grouped layout - har category ka apna heading.
+        # Config me group ka naam + uske skills, order wahi me dikhenge.
+        used = set()
+        for gname, items in groups.items():
+            badges = [_badge(n) for n in items if n in ordered]
+            if not badges:
+                continue
+            used.update(n for n in items if n in ordered)
+            parts.append(f"**{gname}**  \n" + "".join(badges))
+        # Jo skill kisi group me nahi hai (repo se auto-detect hua) unhe neeche dikhao
+        leftover = [s for s in ordered if s not in used]
+        if leftover:
+            parts.append(
+                "**Also using**  \n" + "".join(_badge(s) for s in leftover)
+            )
+    elif ordered:
+        parts.append("\n".join(_badge(name) for name in ordered))
 
     # "Learning" - jo seekh rahe ho, wahi alag se
     learning = cfg.get("learning", [])
@@ -307,7 +334,13 @@ def render_skills(repos, cfg):
         )
 
     # repo topics se extra chips
-    known = {s.lower() for s in ordered} | {"web", "frontend"}
+    # Jo topic kisi ALREADY DIKHNE WALE skill ke topic_rules se aaya hai,
+    # wo redundant hai (jaise Java badge ke saath "dsa", "oop" chips).
+    rule_topics = set()
+    for name in ordered:
+        for t in cfg["topic_rules"].get(name, []):
+            rule_topics.add(t.lower())
+    known = {s.lower() for s in ordered} | {"web", "frontend"} | rule_topics
     chips = [t for t in topics if t.lower() not in known]
     chips += [t for t in extra if t.lower() not in known and t not in topics]
     chips = list(dict.fromkeys(chips))[:10]

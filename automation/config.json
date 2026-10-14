@@ -16,17 +16,25 @@
   "auto_contact": true,
 
   "_skills_note": "Ye skills badges PEHLE dikhti hain. Naya kuch seekhein to yahan add kar dein. Sirf wahi likhein jo aap SACHCHI jaante hain - recruiter pehla yahi check karta hai.",
-  "skills": ["HTML", "CSS", "JavaScript", "Java"],
+  "skills": ["HTML", "CSS", "JavaScript", "Java", "Python", "C", "C++", "SQL", "MySQL", "Git", "GitHub", "VS Code"],
+
+  "_skill_groups_note": "Badges group me dikhti hain. Naya group ya skill yahan add karo - AUTO:SKILLS block apne aap update ho jayega.",
+  "skill_groups": {
+    "Languages": ["Java", "Python", "JavaScript", "C", "C++", "SQL"],
+    "Frontend": ["HTML", "CSS"],
+    "Database": ["MySQL"],
+    "Tools": ["Git", "GitHub", "VS Code"]
+  },
 
   "_learning_note": "Jo abhi seekh rahe ho. Ye profile par alag dikhega, isse recruiter ko lagta hai ki aap actively seekh rahe ho.",
-  "learning": ["Git & GitHub", "Responsive Design", "DOM Manipulation"],
+  "learning": ["Data Structures & Algorithms", "System Design", "Git & GitHub"],
 
   "commit_message": "chore(profile): auto-update by profile_manager",
 
   "profile": {
     "name": "Abhijeet Kumar Prajapati",
-    "location": "India",
-    "bio": "BTech IT student - HTML, CSS & JavaScript. Building responsive, clean and user-friendly web projects. Open to internships and entry-level roles.",
+    "location": "Katras, Jharkhand, India",
+    "bio": "BTech IT (2026) - Java, Web Development & Automation. Building clean, user-friendly projects that turn ideas into working code.",
     "hireable": true
   },
 
