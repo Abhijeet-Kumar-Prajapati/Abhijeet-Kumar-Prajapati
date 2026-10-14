@@ -32,11 +32,9 @@ projects, learn from experienced developers, and contribute to production code.
 
 | | Details |
 |---|---|
-| **College** | `YAHAN APNA COLLEGE KA NAAM` |
-| **University** | `YAHAN UNIVERSITY KA NAAM` |
-| **Duration** | `2023 — 2027` |
-| **CGPA / Percentage** | `YAHAN APNA SCORE` |
-| **Coursework** | Data Structures · DBMS · Operating Systems · Computer Networks · Software Engineering |
+| **University** | `University College of Engineering and Technology, Vinoba Bhave University, Hazaribagh ` |
+| **Duration** | `2022 — 2026` |
+| **CGPA / Percentage** | `6.3 CGPA / 63%` |
 
 ---
 
