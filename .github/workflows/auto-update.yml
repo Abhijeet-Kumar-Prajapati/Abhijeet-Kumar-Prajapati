@@ -1,0 +1,75 @@
+name: Auto Update Profile
+
+# Ye workflow apne aap chalta hai - kuch karne ki zaroorat nahi.
+# Roz subah ~11:47 IST (06:17 UTC) chalega.
+
+on:
+  schedule:
+    # GitHub UTC time use karta hai. 06:17 UTC = 11:47 IST
+    - cron: '17 6 * * *'
+
+  # Manual: is page se "Run workflow" dabakar kabhi bhi chala sakte ho
+  workflow_dispatch:
+
+  # config ya script change karo to turant run ho
+  push:
+    branches: [main]
+    paths:
+      - 'automation/**'
+      - '.github/workflows/auto-update.yml'
+
+# ---- SECURITY: sirf yehi ek permission, baaki sab blocked ----
+permissions:
+  contents: write
+
+# Ek waqt me sirf ek run - doosre runs queue/rank ho jayenge.
+# Isse ghasiyab (accidental) infinite loop nahi hoga.
+concurrency:
+  group: profile-auto-update
+  cancel-in-progress: false
+
+# Koi script 10 minute se zyada na chale (hang hone par auto ruk jayega)
+timeout-minutes: 10
+
+jobs:
+  update-profile:
+    name: Update profile
+    runs-on: ubuntu-latest
+
+    steps:
+      # Actions ko commit SHA se pin kiya hai (supply-chain protection).
+      # # v4 / # v5 sirf padhne ke liye comment hai.
+      - name: Checkout code
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false   # token disk par save nahi hota
+
+      - name: Setup Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.12'
+
+      - name: Run profile auto-manager
+        env:
+          # PROFILE_TOKEN = Fine-grained personal access token
+          # (Settings -> Secrets and variables -> Actions me rakha hua)
+          #
+          # Secret GitHub apne aap logs me chhupa deta hai, lekin
+          # classic 'repo'/'user' scope wali token bahut powerful hoti hai.
+          # Fine-grained token sirf isi ek repo tak limited hoti hai -
+          # isliye wo zyada safe hai.
+          #
+          # PROFILE_TOKEN na ho to GitHub ka apna token use hoga, jo
+          # README + topics update kar sakta hai (sirf bio nahi).
+          # Isse run kabhi fail nahi hoga - kam se kam README update hoti rahegi.
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
+        run: python automation/profile_manager.py
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "### Profile Auto-Manager chal gaya" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Profile: https://github.com/${{ github.repository_owner }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "> Secret set nahi hai to profile bio update nahi hua." >> $GITHUB_STEP_SUMMARY
