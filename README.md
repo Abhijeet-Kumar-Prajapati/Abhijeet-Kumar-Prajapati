@@ -43,6 +43,14 @@ projects, learn from experienced developers, and contribute to production code.
 ## 🛠️ Tech Stack
 
 <!-- AUTO:SKILLS:START -->
+<img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML" title="HTML" />
+<img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS" title="CSS" />
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" title="JavaScript" />
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" title="Python" /><br><br>
+
+**Currently learning:** `Git & GitHub` `Responsive Design` `DOM Manipulation`<br><br>
+
+**Also working with:** `automation` `scripting`
 <!-- AUTO:SKILLS:END -->
 
 > Naya repo banate hi ye badges apne aap update ho jayenge.
@@ -52,6 +60,13 @@ projects, learn from experienced developers, and contribute to production code.
 ## 📊 GitHub Stats
 
 <!-- AUTO:STATS:START -->
+<div align="center">
+
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=Abhijeet-Kumar-Prajapati&show_icons=true&theme=radical&hide_border=true&include_all_commits=true" alt="GitHub Stats" />
+
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs?username=Abhijeet-Kumar-Prajapati&layout=compact&theme=radical&hide_border=true" alt="Top Languages" />
+
+</div>
 <!-- AUTO:STATS:END -->
 
 ---
@@ -59,6 +74,9 @@ projects, learn from experienced developers, and contribute to production code.
 ## 📂 My Projects
 
 <!-- AUTO:PROJECTS:START -->
+| Project | Description | Tech | Stars |
+| :--- | :--- | :---: | ---: |
+| **[Web-Media-Player](https://github.com/Abhijeet-Kumar-Prajapati/Web-Media-Player)** | A responsive HTML, CSS and JavaScript web media player for playing local audio and video files with playlist controls, playback speed, volume adjustment, and a modern user interface. | `HTML` | ⭐ 0 |
 <!-- AUTO:PROJECTS:END -->
 
 ---
@@ -94,6 +112,10 @@ projects, learn from experienced developers, and contribute to production code.
 ## 📫 Let's Connect
 
 <!-- AUTO:CONTACT:START -->
+<a href="mailto:abhijeet943935@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a><br>
+<a href="https://github.com/Abhijeet-Kumar-Prajapati/Abhijeet-Kumar-Prajapati/discussions"><img src="https://img.shields.io/badge/Discussions-6366F1?style=for-the-badge&logo=github&logoColor=white" alt="Discussions" /></a><br>
+<br/>💬 _Sabse behtar tarika: **GitHub Discussions** - wahan message pata chalta hai aur aapka number/email bilkul safe rehta hai._<br>
+<br/><br/><a href="mailto:abhijeet943935@gmail.com?subject=Contact%20from%20GitHub">📩 <b>Send me a message</b></a>
 <!-- AUTO:CONTACT:END -->
 
 <!--
