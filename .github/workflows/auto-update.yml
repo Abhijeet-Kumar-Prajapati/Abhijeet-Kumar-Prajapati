@@ -28,13 +28,11 @@ concurrency:
   group: profile-auto-update
   cancel-in-progress: false
 
-# Koi script 10 minute se zyada na chale (hang hone par auto ruk jayega)
-timeout-minutes: 10
-
 jobs:
   update-profile:
     name: Update profile
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     steps:
       # Actions ko commit SHA se pin kiya hai (supply-chain protection).
