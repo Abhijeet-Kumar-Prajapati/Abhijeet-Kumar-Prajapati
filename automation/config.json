@@ -16,7 +16,7 @@
   "auto_contact": true,
 
   "_skills_note": "Ye skills badges PEHLE dikhti hain. Naya kuch seekhein to yahan add kar dein. Sirf wahi likhein jo aap SACHCHI jaante hain - recruiter pehla yahi check karta hai.",
-  "skills": ["HTML", "CSS", "JavaScript"],
+  "skills": ["HTML", "CSS", "JavaScript", "Java"],
 
   "_learning_note": "Jo abhi seekh rahe ho. Ye profile par alag dikhega, isse recruiter ko lagta hai ki aap actively seekh rahe ho.",
   "learning": ["Git & GitHub", "Responsive Design", "DOM Manipulation"],
@@ -62,6 +62,7 @@
     "CSS": ["css", "frontend", "responsive-design"],
     "JavaScript": ["javascript", "frontend", "web"],
     "Python": ["python", "automation", "scripting"],
+    "Java": ["java", "programming", "dsa", "oop"],
     "TypeScript": ["typescript", "frontend"]
   }
 }
