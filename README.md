@@ -74,9 +74,7 @@ HTML/CSS/JavaScript, a collection of **Java programs** covering DSA and OOP, or 
 **Tools**  
 <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" title="Git" /><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" title="GitHub" /><img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="VS Code" title="VS Code" /><br><br>
 
-**Currently learning:** `Data Structures & Algorithms` `System Design` `Git & GitHub`<br><br>
-
-**Also working with:** `gear`
+**Currently learning:** `Data Structures & Algorithms` `System Design` `Git & GitHub`
 <!-- AUTO:SKILLS:END -->
 
 > Naya skill ya repo banate hi ye badges **apne aap** update ho jayenge.
@@ -102,9 +100,13 @@ HTML/CSS/JavaScript, a collection of **Java programs** covering DSA and OOP, or 
 <!-- AUTO:PROJECTS:START -->
 | Project | Description | Tech | Stars |
 | :--- | :--- | :---: | ---: |
-| **[Ionic-ToolKit-](https://github.com/Abhijeet-Kumar-Prajapati/Ionic-ToolKit-)** | A feature-rich web toolkit containing interactive modules like calculators, DSA problem solvers, a digital library, matrix operations, and mini-games built with modern web technologies. | `HTML` | ⭐ 0 |
+| **[Open-Architecture-Power-Media-Player.--Software-Andriod-Mac-Os](https://github.com/Abhijeet-Kumar-Prajapati/Open-Architecture-Power-Media-Player.--Software-Andriod-Mac-Os)** | _No description yet._ | `JavaScript` | ⭐ 0 |
 | **[MULTIPLE-JAVA-PRACTICE-PROGRAMS---ALL-IN-ONE-LAUNCHER](https://github.com/Abhijeet-Kumar-Prajapati/MULTIPLE-JAVA-PRACTICE-PROGRAMS---ALL-IN-ONE-LAUNCHER)** | A collection of multiple Java practice programs in one launcher, covering essential programming concepts, logical problem-solving, and hands-on coding practice. Ideal for beginners and students to learn, practice, and improve Java programming skills. | `Java` | ⭐ 0 |
+| **[CODELITE-SOFTWARE-PC](https://github.com/Abhijeet-Kumar-Prajapati/CODELITE-SOFTWARE-PC)** | A lightweight, fully offline code editor for Windows. | `JavaScript` | ⭐ 0 |
 | **[Web-Media-Player](https://github.com/Abhijeet-Kumar-Prajapati/Web-Media-Player)** | A responsive HTML, CSS and JavaScript web media player for playing local audio and video files with playlist controls, playback speed, volume adjustment, and a modern user interface. <br/>[Live Demo](https://abhijeet-kumar-prajapati.github.io/Web-Media-Player/) | `HTML` | ⭐ 0 |
+| **[Abhijeet-Work-Hub](https://github.com/Abhijeet-Kumar-Prajapati/Abhijeet-Work-Hub)** | Ek complete application jo har project ko ek hi dashboard me dikhati hai — Flask apps, AI assistants, web projects, Android apps aur practice files — sab kuch automatically scan hoke. | `HTML` | ⭐ 0 |
+| **[GAME-VALT-PLATFORM](https://github.com/Abhijeet-Kumar-Prajapati/GAME-VALT-PLATFORM)** | A mobile gaming platform built for the Indian mobile gaming community. Discover games, join tournaments with real prize money, climb the leaderboard and connect with players. | `JavaScript` | ⭐ 0 |
+| **[Ionic-ToolKit-](https://github.com/Abhijeet-Kumar-Prajapati/Ionic-ToolKit-)** | A feature-rich web toolkit containing interactive modules like calculators, DSA problem solvers, a digital library, matrix operations, and mini-games built with modern web technologies. | `HTML` | ⭐ 0 |
 <!-- AUTO:PROJECTS:END -->
 
 ### 🌐 Ionic ToolKit — All-in-One Student Toolkit
